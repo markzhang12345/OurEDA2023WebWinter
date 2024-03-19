@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 您能且只能在此处引入外部 CSS，禁止使用内部 CSS -->
+    <link rel="stylesheet" type="text/css" href="style/wordle.css" />
+    <!-- 您能且只能在此处引入外部 JavaScript，禁止使用内部 JavaScript -->
+    <script src="script/wordle.js"></script>
+    <title>Wordle</title>
+  </head>
+  <body>
+    <!-- TODO: 编写您的 HTML 代码 -->
+    <button onclick="answerClick(event)">答案</button>
+    <button onclick="returnClick(event)">重来</button>
+    <div class="body">
+      <div class="container">
+        <div class="row">
+          <div id="10" class="tile"></div>
+          <div id="11" class="tile"></div>
+          <div id="12" class="tile"></div>
+          <div id="13" class="tile"></div>
+          <div id="14" class="tile"></div>
+        </div>
+        <div class="row">
+          <div id="20" class="tile"></div>
+          <div id="21" class="tile"></div>
+          <div id="22" class="tile"></div>
+          <div id="23" class="tile"></div>
+          <div id="24" class="tile"></div>
+        </div>
+        <div class="row">
+          <div id="30" class="tile"></div>
+          <div id="31" class="tile"></div>
+          <div id="32" class="tile"></div>
+          <div id="33" class="tile"></div>
+          <div id="34" class="tile"></div>
+        </div>
+        <div class="row">
+          <div id="40" class="tile"></div>
+          <div id="41" class="tile"></div>
+          <div id="42" class="tile"></div>
+          <div id="43" class="tile"></div>
+          <div id="44" class="tile"></div>
+        </div>
+        <div class="row">
+          <div id="50" class="tile"></div>
+          <div id="51" class="tile"></div>
+          <div id="52" class="tile"></div>
+          <div id="53" class="tile"></div>
+          <div id="54" class="tile"></div>
+        </div>
+        <div class="row">
+          <div id="60" class="tile"></div>
+          <div id="61" class="tile"></div>
+          <div id="62" class="tile"></div>
+          <div id="63" class="tile"></div>
+          <div id="64" class="tile"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wordle-footer">
+      <div class="key-row">
+        <button id="Q" class="key" onclick="letterclick(event)">Q</button>
+        <button id="W" class="key" onclick="letterclick(event)">W</button>
+        <button id="E" class="key" onclick="letterclick(event)">E</button>
+        <button id="R" class="key" onclick="letterclick(event)">R</button>
+        <button id="T" class="key" onclick="letterclick(event)">T</button>
+        <button id="Y" class="key" onclick="letterclick(event)">Y</button>
+        <button id="U" class="key" onclick="letterclick(event)">U</button>
+        <button id="I" class="key" onclick="letterclick(event)">I</button>
+        <button id="O" class="key" onclick="letterclick(event)">O</button>
+        <button id="P" class="key" onclick="letterclick(event)">P</button>
+      </div>
+      <div class="key-row">
+        <button id="A" class="key" onclick="letterclick(event)">A</button>
+        <button id="S" class="key" onclick="letterclick(event)">S</button>
+        <button id="D" class="key" onclick="letterclick(event)">D</button>
+        <button id="F" class="key" onclick="letterclick(event)">F</button>
+        <button id="G" class="key" onclick="letterclick(event)">G</button>
+        <button id="H" class="key" onclick="letterclick(event)">H</button>
+        <button id="J" class="key" onclick="letterclick(event)">J</button>
+        <button id="K" class="key" onclick="letterclick(event)">K</button>
+        <button id="L" class="key" onclick="letterclick(event)">L</button>
+      </div>
+      <div class="key-row">
+        <button class="key" onclick="enterClick(event)">enter</button>
+        <button id="Z" class="key" onclick="letterclick(event)">Z</button>
+        <button id="X" class="key" onclick="letterclick(event)">X</button>
+        <button id="C" class="key" onclick="letterclick(event)">C</button>
+        <button id="V" class="key" onclick="letterclick(event)">V</button>
+        <button id="B" class="key" onclick="letterclick(event)">B</button>
+        <button id="N" class="key" onclick="letterclick(event)">N</button>
+        <button id="M" class="key" onclick="letterclick(event)">M</button>
+        <button class="key" onclick="BackClick(event)">delete</button>
+      </div>
+    </div>
+  </body>
+</html>

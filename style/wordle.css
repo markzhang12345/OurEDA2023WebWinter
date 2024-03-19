@@ -1,0 +1,41 @@
+.body {
+  padding: 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.body .container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  align-items: center;
+  background-color: white;
+}
+
+.body .row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+}
+
+.body .row .tile {
+  width: 31px;
+  height: 31px;
+  font-size: 16px;
+  font-weight: 350;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid #000000;
+}
+
+.key {
+  padding: 15px 15px;
+  font-size: 10px;
+}
+
+.wordle-footer {
+  text-align: center;
+  font-size: 200%;
+}
